@@ -1,0 +1,52 @@
+body {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+  }
+
+  article {
+    width: 600px;
+    height: 600px;
+    background: #16a085;
+    display: flex;
+    /* 박스를 중앙정렬 */
+    justify-content: center;
+    /* 박스를 수직정렬 */
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 600px / 2);
+    top: calc(50% - 600px / 2);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  article h2 {
+    font-size: 40px;
+    line-height: 70px;
+  }
+  article p {
+    font-size: 20px;
+    font-style: italic
+  }
+
+  #prev{
+      background: pink;
+      position:absolute;
+      left:10px;
+  }
+  #next{
+    background: pink;
+    position:absolute;
+    right:10px;
+}
+#prev, #next{
+    width:48px;
+    height:48px;
+    background:rgba(0,0,0,0.2);
+    border-radius: 50%;
+    border-style: none;
+    color:#fff;
+}
+#prev:hover , #next:hover {
+    background:rgba(0,0,0,0.4);
+}
